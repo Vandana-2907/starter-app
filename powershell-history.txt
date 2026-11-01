@@ -1,0 +1,148 @@
+terraform -version
+winget install Hashicorp.Terraform
+terraform -version
+where.exe terraform
+winget install docker docker.desktop
+winget install Docker.Dockerdesktop
+docker version
+where.exe docker
+Get-Command docker -All
+wsl --status
+wsl --install
+docker version
+docker run hello-world
+history
+history 50
+docker version
+docker run Hello- World
+docker run hello world
+docker run hello-world
+winget install --id kubernetes .kind --exact
+winget install --id kubernetes.kind --exact
+winger search kind
+winget install --id Kubernetes.kind
+kind version
+winget search kind
+winget install --id kubernetes.kubectl --exact
+winget install --id kubernetes.kubectl
+kubectl version --client
+winget install --id helm.helm
+helm version
+kind create cluster --name test
+mkdir terraform-kind-argocd`
+cd terraform-kind-argocd`
+code .
+kubectl get nodes
+terraform init
+terraform validate
+terraform apply -auto-approve
+kubectl get pods -n argocd
+*ubectl port-forward svc/argocd-ser*er -n argocd 8080:443
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+terraform plan
+Helm version
+helm create starter-app
+cd starter-app
+ls
+cat chart.yaml
+cat values.yaml
+cat templates.yaml
+cat templates
+argocd-app.yaml
+git add
+git --version
+where.exe git
+winget install --id Git.Git -e --source winget
+where.exe git
+dir "C:\Program Files\Git"
+dir "C:\Program Files\Git\cmd"
+& "C:\Program Files\Git\cmd\git.exe" --version
+git init
+$env:Path += ";C:\Program Files\Git\cmd"
+git --version
+cd "C:\Users\Birendra\New folder\starter-app"
+git init
+tree /F
+mkdir argocd
+tree /F
+notepad argocd\application.yaml
+tree /F
+git add
+git add .
+git remote add origin https://github.com/YOUR_USERNAME/starter-app.git
+git branch -M main
+git push -u origin main
+git add .
+git commit -m "Added Helm chart and ArgoCD application"
+git config --global user.email "you@example.com"
+ git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global user.email "vandu29kv@gmail.com"
+git config --global user.name "Vandana-2907"
+git config --global --list
+git add .
+git commit -m "Added Helm chart and ArgoCD application"
+git remote -v
+git remote add origin https://github.com/Vandana-2907/starter-app.git
+git remote set-url origin https://github.com/Vandana-2907/starter-app.git
+git remote -v
+git push -u origin main
+git remote set-url origin https://github.com/Vandana-2907/starter-app.git
+git push -u origin main
+https://github.com/Vandana-2907/starter-app
+git remote set-url origin https://github.com/Vandana-2907/starter-app.git
+git remote -v
+git push -u origin main
+ git push -u origin main
+git push -u origin main
+https://github.com/Vandana-2907/starter-app
+kubectl apply -f argocd/application.yaml
+argocd app list
+kubectl get pods -n dev
+notepad namespace.yaml
+tree /F
+git add namespace.yaml
+git commit -m "Added dev namespace"
+git push
+get-history
+Get-Content (Get-PSReadLineOption).HistorySavePath`
+
+Get-Content (Get-PSReadLineOption).HistorySavePath`
+
+Get-ChildItem $HOME\Documents -Filter "*transcript*" -Recurse
+Get-ChildItem "$HOME\Documents\PowerShell_transcript*" -Recurse
+notepad (Get-PSReadLineOption).HistorySavePath
+type (Get-PSReadLineOption).HistorySavePath
+notepad $PROFILE
+kubectl apply -f argocd/application.yaml
+kubectl apply -f argocd/application.yaml
+cd starter-app
+kubectl apply -f argocd\application.yaml
+kubectl apply -f .\starter-app\argocd\application.yaml
+kubectl apply -f .\argocd\application.yaml
+dir .\argocd\
+kubectl apply -f .\argocd\application.yaml
+kubectl get nodes
+kind get clusters
+terraform apply
+docker ps
+Get-ChildItem -Path C:\Users\Birendra -Recurse -Filter *.tf
+cd "PATH_TO_TERRAFORM_FOLDER"
+cd "C:\Users\Birendra\New folder\terraform-lab"
+dir
+terraform init
+Get-ChildItem C:\Users\Birendra -Recurse -Filter main.tf | Select FullName
+cd "C:\Users\Birendra\New folder\terraform-kind-argocd"
+dir
+terraform init
+terraform apply
+kubectl get nodes
+kubectl get pods -n argocd
+kubectl apply -f .\argocd\application.yaml
+cd "C:\Users\Birendra\New folder\starter-app"
+dir argocd
+kubectl apply -f .\argocd\application.yaml
+kubectl get applications -n argocd
+(Get-PSReadLineOption).HistorySavePath
+Copy-Item (Get-PSReadLineOption).HistorySavePath .\powershell-history.txt
