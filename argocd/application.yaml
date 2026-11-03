@@ -12,6 +12,9 @@ spec:
     repoURL: https://github.com/Vandana-2907/starter-app.git
     targetRevision: main
     path: .
+    helm:
+    valueFiles:
+      - values-dev.yaml
 
   destination:
     server: https://kubernetes.default.svc
@@ -20,6 +23,6 @@ spec:
   syncPolicy:
     automated:
       prune: true
-      selfHeal: true
+      selfHeal: false
     syncOptions:
       - CreateNamespace=true
