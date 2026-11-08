@@ -1,0 +1,40 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/Vandana-2907/starter-app.git
+    chart: grafana
+    targetRevision: "*"
+    helm:
+      values: |
+        adminPassword: admin123
+
+        datasources:
+          datasources.yaml:
+            apiVersion: 1
+            datasources:
+            - name: Mimir
+              type: prometheus
+              url: http://mimir-nginx.observability.svc.cluster.local/prometheus
+
+            - name: Loki
+              type: loki
+              url: http://loki.observability.svc.cluster.local:3100
+
+            - name: Tempo
+              type: tempo
+              url: http://tempo.observability.svc.cluster.local:3100
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: observability
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

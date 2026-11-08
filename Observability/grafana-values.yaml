@@ -1,0 +1,23 @@
+adminPassword: admin123
+
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+
+    datasources:
+
+    - name: Mimir
+      type: prometheus
+      access: proxy
+      url: http://mimir-nginx.observability.svc.cluster.local/prometheus
+      isDefault: true
+
+    - name: Loki
+      type: loki
+      access: proxy
+      url: http://loki.observability.svc.cluster.local:3100
+
+    - name: Tempo
+      type: tempo
+      access: proxy
+      url: http://tempo.observability.svc.cluster.local:3100
