@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/Vandana-2907/starter-app.git
-    targetRevision: HEAD
+    targetRevision: 6.28.0
     chart: loki
     repoURL: https://grafana.github.io/helm-charts
     helm:
