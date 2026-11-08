@@ -3,19 +3,22 @@ kind: Application
 metadata:
   name: loki
   namespace: argocd
+
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/Vandana-2907/starter-app.git
-    targetRevision: 6.28.0
-    chart: loki
     repoURL: https://grafana.github.io/helm-charts
+    chart: loki
+    targetRevision: 6.28.0
+
     helm:
       values: |
         deploymentMode: SingleBinary
+
         singleBinary:
           replicas: 1
+
         loki:
           storage:
             type: filesystem
