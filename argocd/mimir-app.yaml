@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/Vandana-2907/starter-app.git
     targetRevision: HEAD
-    path: observability
+    path: Observability
     helm:
       valueFiles:
         - mimir-values.yaml
