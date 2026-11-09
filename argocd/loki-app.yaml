@@ -16,7 +16,7 @@ spec:
     targetRevision: "*"
     helm:
       values: |
-      deploymentMode: SingleBinary
+        deploymentMode: SingleBinary
 
       loki:
         auth_enabled: false
