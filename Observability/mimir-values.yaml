@@ -1,8 +1,5 @@
-minio:
+inio:
   enabled: true
-
-gateway:
-  replicas: 1
 
 ingester:
   replicas: 1
@@ -13,17 +10,8 @@ distributor:
 querier:
   replicas: 1
 
-query_frontend:
+queryFrontend:
   replicas: 1
 
 store_gateway:
-  replicas: 1
-
-compactor:
-  replicas: 1
-
-ruler:
-  replicas: 1
-
-alertmanager:
   replicas: 1

@@ -3,13 +3,18 @@ kind: Application
 metadata:
   name: tempo
   namespace: argocd
+
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/Vandana-2907/starter-app.git
+    repoURL: https://grafana.github.io/helm-charts
     chart: tempo
     targetRevision: "*"
+
+    helm:
+      valueFiles:
+        - observability/tempo-values.yaml
 
   destination:
     server: https://kubernetes.default.svc

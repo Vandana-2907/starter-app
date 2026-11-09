@@ -13,15 +13,8 @@ spec:
     targetRevision: "*"
 
     helm:
-      values: |
-        deploymentMode: SingleBinary
-
-        singleBinary:
-          replicas: 1
-
-        loki:
-          storage:
-            type: filesystem
+      valueFiles:
+        - observability/loki-values.yaml
 
   destination:
     server: https://kubernetes.default.svc
