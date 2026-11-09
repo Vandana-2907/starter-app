@@ -11,6 +11,9 @@ write:
   replicas: 0
   
 chunksCache:
-  allocatedMemory: 64
+  enabled: false
+
+resultscache:
+  enabled: false
 
 
