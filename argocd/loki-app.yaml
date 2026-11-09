@@ -23,7 +23,7 @@ spec:
 
         commonConfig:
           replication_factor: 1
-          
+
         storage:
           type: filesystem
 
@@ -40,10 +40,10 @@ spec:
       replicas: 0
 
     chunksCache:
-      enabled: false
+      allocatedMemory: 64
 
     resultsCache:
-      enabled: false
+      allocatedMemory: 64
 
       
 
