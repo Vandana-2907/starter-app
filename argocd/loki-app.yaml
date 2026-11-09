@@ -12,9 +12,32 @@ spec:
     repoURL: https://grafana.github.io/helm-charts
     chart: loki
     targetRevision: "*"
+
     helm:
-      valueFiles:
-        - observability/loki-values.yaml
+      values: |
+        deploymentMode: SingleBinary
+
+        loki:
+          auth_enabled: false
+          useTestSchema: true
+
+          commonConfig:
+            replication_factor: 1
+
+          storage:
+            type: filesystem
+
+        singleBinary:
+          replicas: 1
+
+        backend:
+          replicas: 0
+
+        read:
+          replicas: 0
+
+        write:
+          replicas: 0
 
   destination:
     server: https://kubernetes.default.svc

@@ -1,9 +1,4 @@
-
-
 deploymentMode: SingleBinary
-
-singleBinary:
-  replicas: 1
 
 loki:
   auth_enabled: false
@@ -13,3 +8,21 @@ loki:
 
   storage:
     type: filesystem
+
+singleBinary:
+  replicas: 1
+
+backend:
+  replicas: 0
+
+read:
+  replicas: 0
+
+write:
+  replicas: 0
+
+chunksCache:
+  enabled: false
+
+resultsCache:
+  enabled: false
