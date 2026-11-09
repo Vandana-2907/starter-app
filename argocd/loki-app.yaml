@@ -39,6 +39,21 @@ spec:
         write:
           replicas: 0
 
+        chunksCache:
+          enabled: false
+
+        resultsCache:
+          enabled: false
+
+         memcachedChunks:
+          enabled: false
+
+         memcachedFrontend:
+          enabled: false
+
+         memcachedIndexQueries:
+          enabled: false
+
   destination:
     server: https://kubernetes.default.svc
     namespace: observability
