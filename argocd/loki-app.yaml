@@ -16,7 +16,7 @@ spec:
     targetRevision: "*"
     helm:
       valueFiles:
-        - values-loki.yaml
+        - loki-values.yaml
 
   syncPolicy:
     automated:
