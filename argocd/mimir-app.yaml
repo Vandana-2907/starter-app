@@ -12,10 +12,6 @@ spec:
     chart: mimir-distributed
     targetRevision: "*"
 
-    helm:
-      valueFiles:
-        - observability/mimir-values.yaml
-
   destination:
     server: https://kubernetes.default.svc
     namespace: observability

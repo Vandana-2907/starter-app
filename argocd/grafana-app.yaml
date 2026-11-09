@@ -12,10 +12,7 @@ spec:
     repoURL: https://grafana.github.io/helm-charts
     chart: grafana
     targetRevision: "*"
-    helm:
-      valueFiles:
-        - observability/grafana-values.yaml
-
+    
   destination:
     server: https://kubernetes.default.svc
     namespace: observability

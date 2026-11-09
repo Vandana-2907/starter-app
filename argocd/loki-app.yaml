@@ -1,5 +1,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
+
 metadata:
   name: loki
   namespace: argocd
@@ -11,7 +12,6 @@ spec:
     repoURL: https://grafana.github.io/helm-charts
     chart: loki
     targetRevision: "*"
-
     helm:
       valueFiles:
         - observability/loki-values.yaml
